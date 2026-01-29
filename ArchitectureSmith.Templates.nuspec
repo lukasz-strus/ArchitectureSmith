@@ -7,8 +7,8 @@
     <authors>Your Name</authors>
     <description>Clean Architecture solution template for dotnet new.</description>
 
-    <projectUrl>https://github.com/<you>/<repo></projectUrl>
-    <repository type="git" url="https://github.com/<you>/<repo>.git" />
+    <projectUrl>https://github.com/lukasz-strus/ArchitectureSmith</projectUrl>
+    <repository type="git" url="https://github.com/lukasz-strus/ArchitectureSmith.git" />
 
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
