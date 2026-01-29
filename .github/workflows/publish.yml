@@ -1,23 +1,26 @@
-name: Publish template to NuGet
+name: Package (NuGet)
 
 on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    runs-on: windows-latest
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v2
         with:
-          dotnet-version: "10.0.x"
+          nuget-version: "latest"
 
       - name: Pack
-        run: dotnet pack ArchitectureSmith.Templates.csproj -c Release -p:Version=${GITHUB_REF_NAME#v}
+        run: nuget pack ArchitectureSmith.Templates.nuspec -Version $env:GITHUB_REF_NAME.Replace("v","") -NoDefaultExcludes
 
-      - name: Push to NuGet
-        run: dotnet nuget push "bin/Release/*.nupkg" --api-key "${{ secrets.NUGET_KEY }}" --source "https://api.nuget.org/v3/index.json" --skip-duplicate
+      - name: Push
+        run: nuget push *.nupkg -Source "https://api.nuget.org/v3/index.json" -ApiKey ${{ secrets.NUGET_KEY }} -SkipDuplicate
