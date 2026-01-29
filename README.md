@@ -49,7 +49,7 @@ The **Domain** layer is built on top of the **DomainSmith** library to define ri
 ### Install template
 
 ```bash
-dotnet new install ArchitectureSmith
+dotnet new install ArchitectureSmith.Templates 
 ```
 
 ### Create a new solution
