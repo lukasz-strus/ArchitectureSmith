@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArchitectureSmith.Templates</id>
+    <version>0.1.1</version>
+    <title>ArchitectureSmith Clean Architecture Solution Template</title>
+    <authors>Your Name</authors>
+    <description>Clean Architecture solution template for dotnet new.</description>
+
+    <projectUrl>https://github.com/<you>/<repo></projectUrl>
+    <repository type="git" url="https://github.com/<you>/<repo>.git" />
+
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>clean-architecture template dotnet-new csharp ddd</tags>
+
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+
+  <files>
+    <file src="README.md" target="" />
+    <file src=".template.config\**" target=".template.config" />
+    <file src="**\*" target="content"
+          exclude="**\bin\**;**\obj\**;.git\**;.vs\**;**\*.user;**\*.lock.json;**\node_modules\**" />
+  </files>
+</package>
