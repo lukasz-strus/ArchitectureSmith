@@ -4,7 +4,7 @@
     <id>ArchitectureSmith.Templates</id>
     <version>0.1.1</version>
     <title>ArchitectureSmith Clean Architecture Solution Template</title>
-    <authors>Your Name</authors>
+    <authors>Łukasz Strus</authors>
     <description>Clean Architecture solution template for dotnet new.</description>
 
     <projectUrl>https://github.com/lukasz-strus/ArchitectureSmith</projectUrl>
