@@ -40,6 +40,7 @@
       "source": "./",
       "target": "./",
       "exclude": [
+        ".template.config/**",
         "**/[Bb]in/**",
         "**/[Oo]bj/**",
         ".git/**",
@@ -47,8 +48,7 @@
         "**/*.user",
         "**/*.lock.json",
         "**/*.filelist",
-        "*.nuspec",
-        ".template.config/**"
+        "*.nuspec"
       ],
       "rename": {
         "README-template.md": "README.md"
@@ -65,4 +65,5 @@
       ]
     }
   ]
+
 }

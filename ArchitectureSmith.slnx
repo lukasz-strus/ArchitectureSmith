@@ -1,7 +1,4 @@
 <Solution>
-  <Folder Name="/.template.config/">
-    <File Path=".template.config/template.json" />
-  </Folder>
   <Folder Name="/src/">
     <Project Path="src/ArchitectureSmith/ArchitectureSmith.csproj" />
   </Folder>
