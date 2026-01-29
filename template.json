@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "£ukasz Strus",
+  "classifications": [
+    "Web",
+    "ASP.NET",
+    "Clean Architecture",
+    "DDD"
+  ],
+  "name": "ArchitectureSmith Clean Architecture Solution",
+  "description": "Solution template generating a Clean Architecture structure with separated core and external layers (C#).",
+  "identity": "ArchitectureSmith.CleanArchitecture.Solution",
+  "groupIdentity": "ArchitectureSmith.CleanArchitecture",
+  "shortName": "archsmith",
+  "sourceName": "ArchitectureSmith",
+  "preferNameDirectory": true,
+
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+
+  "symbols": {
+    "includeTests": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Include test projects"
+    },
+    "includeGithubActions": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Include GitHub Actions workflow files"
+    }
+  },
+
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".git/**",
+        ".vs/**",
+        "**/*.user",
+        "**/*.lock.json",
+        "**/*.filelist",
+        "*.nuspec",
+        ".template.config/**"
+      ],
+      "rename": {
+        "README-template.md": "README.md"
+      },
+      "modifiers": [
+        {
+          "condition": "(!includeTests)",
+          "exclude": [ "tests/**" ]
+        },
+        {
+          "condition": "(!includeGithubActions)",
+          "exclude": [ ".github/**" ]
+        }
+      ]
+    }
+  ]
+}
