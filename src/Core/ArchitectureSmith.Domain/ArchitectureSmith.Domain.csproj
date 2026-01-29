@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DomainSmith.AggregateRoot" Version="0.1.1" />
+    <PackageReference Include="DomainSmith.Entity" Version="0.1.1" />
+    <PackageReference Include="DomainSmith.Repository" Version="0.1.1" />
+    <PackageReference Include="DomainSmith.ValueObject" Version="0.1.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="ArchitectureSmith.Domain.Tests" />
+	</ItemGroup>
+
+</Project>

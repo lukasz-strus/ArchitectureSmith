@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ArchitectureSmith/ArchitectureSmith.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/ArchitectureSmith.Application/ArchitectureSmith.Application.csproj" />
+    <Project Path="src/Core/ArchitectureSmith.Domain/ArchitectureSmith.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/External/">
+    <Project Path="src/External/ArchitectureSmith.Authentication/ArchitectureSmith.Authentication.csproj" />
+    <Project Path="src/External/ArchitectureSmith.Authorization/ArchitectureSmith.Authorization.csproj" />
+    <Project Path="src/External/ArchitectureSmith.Persistence/ArchitectureSmith.Persistence.csproj" />
+    <Project Path="src/External/ArchitectureSmith.Presentation/ArchitectureSmith.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Core/">
+    <Project Path="tests/Core/ArchitectureSmith.Application.Tests/ArchitectureSmith.Application.Tests.csproj" />
+    <Project Path="tests/Core/ArchitectureSmith.Domain.Tests/ArchitectureSmith.Domain.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/External/">
+    <Project Path="tests/External/ArchitectureSmith.Authentication.Tests/ArchitectureSmith.Authentication.Tests.csproj" />
+    <Project Path="tests/External/ArchitectureSmith.Authorization.Tests/ArchitectureSmith.Authorization.Tests.csproj" />
+    <Project Path="tests/External/ArchitectureSmith.Persistence.Tests/ArchitectureSmith.Persistence.Tests.csproj" />
+    <Project Path="tests/External/ArchitectureSmith.Presentation.Tests/ArchitectureSmith.Presentation.Tests.csproj" />
+  </Folder>
+</Solution>
